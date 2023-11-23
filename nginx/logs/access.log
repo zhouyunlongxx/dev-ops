@@ -1,0 +1,2 @@
+172.17.0.1 - - [23/Nov/2023:15:17:55 +0000] "GET / HTTP/1.1" 200 622 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" "-"
+172.17.0.1 - - [23/Nov/2023:15:17:57 +0000] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" "-"

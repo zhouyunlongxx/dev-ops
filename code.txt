@@ -1,0 +1,5 @@
+docker container cp z-nginx:/etc/nginx/nginx.conf D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\conf
+docker container cp z-nginx:/etc/nginx/conf.d/default.conf D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\conf\conf.d\default.conf
+docker container cp z-nginx:/usr/share/nginx/html/index.html D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\html
+
+docker run --restart always --name z-nginx -d -v D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\logs:/var/log/nginx -v D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\html:/usr/share/nginx/html -v D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\conf/nginx.conf:/etc/nginx/nginx.conf -v D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\conf/conf.d:/etc/nginx/conf.d -v D:\DEVELOPMENT\IDEAPROJECT\dev-ops\nginx\ssl:/etc/nginx/ssl -p 80:80 --privileged=true -d --restart=always nginx
